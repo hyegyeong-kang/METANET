@@ -38,5 +38,32 @@ public class Manager {
 			System.out.print("대상이 없습니다.");
 		}
 	}
-
+	
+	public void updatePhoneNum() {
+		System.out.print("전화번호 수정 대상 이름:");
+		String name = sc.nextLine();
+		for(int i = 0; i < count; i++) {
+			if (name.equals(arr[i].getName())) {
+				System.out.println("수정할 전화번호를 입력하세요.");
+				String phoneNo = sc.nextLine();
+				arr[i].setPhoneNo(phoneNo);
+				arr[i].show();
+			}else {
+				System.out.println("대상이 없습니다.");
+			}
+		}
+	}
+	
+	public void deletePhoneNum() {
+		System.out.println("전화번호 삭제 대상 이름:");
+		String name = sc.nextLine();
+		for(int i = 0; i < count; i++) {
+			if (name.equals(arr[i].getName())) {
+				//TODO
+			}else {
+				System.out.println("대상이 없습니다.");
+			}
+		}
+		
+	}
 }

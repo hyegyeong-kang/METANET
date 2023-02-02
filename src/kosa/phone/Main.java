@@ -10,7 +10,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		while(true) {
-			System.out.println("1: 전화번호 추가 / 2: 전화번호 목록 출력 / 3: 전화번호 검색 / 4.종료");
+			System.out.println("1: 전화번호 추가 / 2: 전화번호 목록 출력 / 3: 전화번호 검색 / 4: 전화번호 수정 / 5: 전화번호 삭제 / 6.종료");
 			int chk = sc.nextInt();
 			
 			switch(chk) {
@@ -24,6 +24,12 @@ public class Main {
 				mg.searchPhoneNum();
 				break;
 			case 4:
+				mg.updatePhoneNum();
+				break;
+			case 5:
+				mg.deletePhoneNum();
+				break;
+			case 6:
 				return;
 			}
 		}

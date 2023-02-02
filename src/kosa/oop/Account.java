@@ -34,7 +34,7 @@ public class Account {
 	
 	public void printAccount() {
 		System.out.println("계좌번호:" + accountNo);
-		System.out.println("계좌번호:" + accountNo);
-		System.out.println("계좌번호:" + accountNo);
+		System.out.println("소유자:" + ownerName);
+		System.out.println("잔액:" + balance);
 	}
 }
