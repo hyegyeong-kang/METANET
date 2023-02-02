@@ -17,6 +17,6 @@ public class Main {
 			totalPrice += b.getDiscountPrice();
 		}
 		
-		System.out.println(totalPrice + "원");
+		System.out.println("총합:" + totalPrice + "원");
 	}
 }

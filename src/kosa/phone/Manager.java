@@ -25,12 +25,17 @@ public class Manager {
 	}
 	
 	public void searchPhoneNum() {
-		System.out.print("검색할 전화번호:");
-		String phoneNum = sc.nextLine();
+		System.out.print("검색할 이름:");
+		String name = sc.nextLine();
+		int idx = -1;
 		for(int i = 0; i < count; i++) {
-			if (arr[i].equals(phoneNum)) {
-				
+			if (name.equals(arr[i].getName())) {
+				arr[i].show();
+				idx = i;
 			}
+		}
+		if(idx == -1) {
+			System.out.print("대상이 없습니다.");
 		}
 	}
 
