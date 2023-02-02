@@ -14,13 +14,12 @@ public class LoopExam {
 //		}
 //		
 		// 퀴즈2: 2개의 정수를 입력받아 b-a 결과가 항상 양의 정수가 나오도록 구현해보자.
+		Scanner sc = new Scanner(System.in);
 		int a = 0;
 		int b = 0;
 		
 		do {
 			System.out.println("2개의 정수를 입력해주세요.");
-			
-			Scanner sc = new Scanner(System.in);
 			
 			a = sc.nextInt();
 			b = sc.nextInt();
