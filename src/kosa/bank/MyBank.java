@@ -1,7 +1,5 @@
 package kosa.bank;
 
-import java.util.Scanner;
-
 public class MyBank {
 	private int customerNum;
 	Customer[] customers = new Customer[10];
