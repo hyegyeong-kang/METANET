@@ -1,7 +1,5 @@
 package kosa.board;
 
-import java.util.Scanner;
-
 public class Board {
 	// 글번호 , 제목, 작성자, 글내용
 	private int num;
