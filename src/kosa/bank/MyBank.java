@@ -3,7 +3,6 @@ package kosa.bank;
 public class MyBank {
 	private int customerNum;
 	Customer[] customers = new Customer[10];
-	int cnt = 0;
 	
 	public MyBank() {}
 	
@@ -57,6 +56,4 @@ public class MyBank {
 	public void setCustomers(Customer[] customers) {
 		this.customers = customers;
 	}
-	
-	
 }

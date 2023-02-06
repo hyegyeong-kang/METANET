@@ -28,7 +28,7 @@ public class SpecialMember extends GeneralMember{
 		super.rental(video);
 		bonus += 10;
 	}
-
+	
 	@Override
 	public void showMemerInfo() {
 		super.showMemerInfo();
