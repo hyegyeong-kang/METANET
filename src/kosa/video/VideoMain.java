@@ -15,7 +15,9 @@ public class VideoMain {
 		//형변환했기 때문에 자기 자신만 가지고 있는 메소드 호출하지 못함
 		
 		for(int i = 0; i < arr.length; i++) {
+			arr[i].rental(v1);
 			arr[i].showMemerInfo();
+			// 각자의 오버라이딩 한 메소드가 호출될 것임 (우리가 보기에는 같아보이겠지)-> 자바의 다형성
 		}
 		
 //		GeneralMember gm = new GeneralMember("kkk", "홀길동", "서울");
