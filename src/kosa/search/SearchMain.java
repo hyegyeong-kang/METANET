@@ -22,7 +22,6 @@ public class SearchMain {
 		String inputString2 = sc.nextLine();
 		Search search = new Search(inputString2);
 		search.searchLongWord();
-		search.print();
 		
 	}
 

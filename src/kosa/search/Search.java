@@ -29,13 +29,16 @@ public class Search {
 	}
 	
 	public void searchLongWord() {
-		String[] word = inputString.split("");
+		String[] word = inputString.split(" ");
+		int length = 0;
+		int index = 0;
 		for (int i = 0; i < word.length; i++) {
-			int max = word[0].length();
-			if (word[i].length() > max) {
-				System.out.println(word[i]);
+			if (word[i].length() > length) {
+				length = word[i].length();
+				index = i;
 			}
 		}
+		System.out.print("가장 긴 단어:" + word[index]);
 	}
 	
 	public void print() {
