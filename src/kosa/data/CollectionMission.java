@@ -3,6 +3,7 @@ package kosa.data;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
@@ -49,11 +50,32 @@ public class CollectionMission {
 		
 		
 		// 3. Set(TreeSet) // 중복 안되고 정렬 되어있음
-		Set<Integer> set = new TreeSet<Integer>();
+		// 기본 정렬 조건 : Comparable -> compareTo() 오버라이딩
+		// 정렬 기준 변경 : Comparator -> compare() 오버라이딩
+		Set<Integer> set = new TreeSet<Integer>(new Comparator<Integer>() {
+
+			@Override
+			public int compare(Integer o1, Integer o2) {
+				// 내림차순 정렬 기준 정의
+				if(o1  < o2) {
+					return 1;
+				} else if (o1 > o2){
+					return -1;
+				}
+				return 0;
+			}
+		});
+		
+		Set<Integer> set2 
+		= new TreeSet<Integer>((Integer o1, Integer o2) -> o2 - o1);
+		
+		
+		
 		for (int i = 0; set.size() < 6; i++) {
 			set.add(r.nextInt(45) + 1);
 		}
 		System.out.println("Set:" + set);
+		
 	}
 
 }
